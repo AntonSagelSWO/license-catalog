@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="8f084f2dc38121101e62241ce00131ba" sys_domain="global" table="u_cmdb_ci_licenses" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-16 11:33:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4b084f2dc38121101e62241ce00131bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_cmdb_ci_licenses" name="u_cmdb_ci_licenses" sys_domain="global" view="169d5a872300001009d5110d96bf6537">8f084f2dc38121101e62241ce00131ba</sys_ui_form>
+            <sys_ui_section caption="Key Attributes" display_value="Key Attributes" name="u_cmdb_ci_licenses" sys_domain="global" view="169d5a872300001009d5110d96bf6537">0f084f2dc38121101e62241ce00131bd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-16 11:33:04</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-16 11:33:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4f084f2dc38121101e62241ce00131c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_cmdb_ci_licenses" name="u_cmdb_ci_licenses" sys_domain="global" view="169d5a872300001009d5110d96bf6537">8f084f2dc38121101e62241ce00131ba</sys_ui_form>
+            <sys_ui_section caption="More Attributes" display_value="More Attributes" name="u_cmdb_ci_licenses" sys_domain="global" view="169d5a872300001009d5110d96bf6537">83084f2dc38121101e62241ce00131c0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-16 11:33:04</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>u_cmdb_ci_licenses</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-16 11:33:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8f084f2dc38121101e62241ce00131ba</sys_id>
+            <sys_name>u_cmdb_ci_licenses</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+            <sys_update_name>sys_ui_form_sections_8f084f2dc38121101e62241ce00131ba</sys_update_name>
+            <sys_user/>
+            <view display_value="CMDB Agent Workspace" name="cmdb_workspace">169d5a872300001009d5110d96bf6537</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

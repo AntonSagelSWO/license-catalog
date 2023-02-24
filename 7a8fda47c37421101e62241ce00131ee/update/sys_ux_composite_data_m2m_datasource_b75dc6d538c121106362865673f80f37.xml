@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_datasource">
+    <sys_ux_composite_data_m2m_datasource action="INSERT_OR_UPDATE">
+        <dataset display_value="Custom Portal Landing - My Requests Dataset">b35dc6d5e8c121103ae982e76a057c39</dataset>
+        <datasource display_value="My Requests - Requested Item Datasource">7f5dc6d57cc12110635e89db1760fb38</datasource>
+        <sys_class_name>sys_ux_composite_data_m2m_datasource</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-02-15 12:38:17</sys_created_on>
+        <sys_id>b75dc6d538c121106362865673f80f37</sys_id>
+        <sys_name/>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_datasource_b75dc6d538c121106362865673f80f37</sys_update_name>
+    </sys_ux_composite_data_m2m_datasource>
+</record_update>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>10</order>
+        <role display_value="x_976337_license_c.licenses_admin" name="x_976337_license_c.licenses_admin">b9416b53c33421101e62241ce001310f</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:36:59</sys_created_on>
+        <sys_id>7d416b53c33421101e62241ce0013111</sys_id>
+        <sys_name>b9416b53c33421101e62241ce001310f</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sys_embedded_help_role_7d416b53c33421101e62241ce0013111</sys_update_name>
+    </sys_embedded_help_role>
+</record_update>

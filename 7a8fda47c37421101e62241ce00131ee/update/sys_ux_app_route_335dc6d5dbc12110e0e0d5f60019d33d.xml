@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="License Catalog Config">375dc6d5c3c121101e62241ce0013109</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>Additional details</name>
+        <optional_parameters/>
+        <order>100</order>
+        <parent_macroponent display_value="Record Page(request)">bb5dc6d50dc1211094ba548c9934f83d</parent_macroponent>
+        <parent_macroponent_composition_element_id>tab_set_1</parent_macroponent_composition_element_id>
+        <route_type>rec_req_add</route_type>
+        <screen_type display_value="Additional details">bf5dc6d500c121109acddadf3a61003c</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-02-15 12:38:14</sys_created_on>
+        <sys_id>335dc6d5dbc12110e0e0d5f60019d33d</sys_id>
+        <sys_name>Additional details</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sys_ux_app_route_335dc6d5dbc12110e0e0d5f60019d33d</sys_update_name>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=335dc6d5dbc12110e0e0d5f60019d33d"/>
+</record_update>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">3b37ab1bc33421101e62241ce0013174</sp_column>
+        <sp_widget display_value="Catalog Content">ae5755942d94b010f87773c1799aba0f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 14:03:12</sys_created_on>
+        <sys_id>0e47af1bc33421101e62241ce0013199</sys_id>
+        <sys_name/>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sp_instance_0e47af1bc33421101e62241ce0013199</sys_update_name>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=0e47af1bc33421101e62241ce0013199"/>
+</record_update>

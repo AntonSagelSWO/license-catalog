@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="8b7f0325c3c121101e62241ce00131d9" sys_domain="global" table="x_976337_license_c_u_cmdb_ci_licenses" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-16 12:59:13</sys_created_on>
+            <sys_id>49cb13e1c30521101e62241ce0013171</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_976337_license_c_u_cmdb_ci_licenses" sys_domain="global" view="Default view">8b7f0325c3c121101e62241ce00131d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-16 12:59:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-16 12:59:13</sys_created_on>
+            <sys_id>c9cb13e1c30521101e62241ce0013171</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_976337_license_c_u_cmdb_ci_licenses" sys_domain="global" view="Default view">8b7f0325c3c121101e62241ce00131d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-16 12:59:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>kind</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-16 12:59:13</sys_created_on>
+            <sys_id>4dcb13e1c30521101e62241ce0013171</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_976337_license_c_u_cmdb_ci_licenses" sys_domain="global" view="Default view">8b7f0325c3c121101e62241ce00131d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-16 12:59:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-16 12:59:13</sys_created_on>
+            <sys_id>cdcb13e1c30521101e62241ce0013171</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_976337_license_c_u_cmdb_ci_licenses" sys_domain="global" view="Default view">8b7f0325c3c121101e62241ce00131d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-16 12:59:13</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>noapproveneeded</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-16 12:59:13</sys_created_on>
+            <sys_id>41cb13e1c30521101e62241ce0013172</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_976337_license_c_u_cmdb_ci_licenses" sys_domain="global" view="Default view">8b7f0325c3c121101e62241ce00131d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-16 12:59:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>publisher</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-16 12:59:13</sys_created_on>
+            <sys_id>c1cb13e1c30521101e62241ce0013172</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_976337_license_c_u_cmdb_ci_licenses" sys_domain="global" view="Default view">8b7f0325c3c121101e62241ce00131d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-16 12:59:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>paymenttype</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-16 12:59:13</sys_created_on>
+            <sys_id>45cb13e1c30521101e62241ce0013172</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_976337_license_c_u_cmdb_ci_licenses" sys_domain="global" view="Default view">8b7f0325c3c121101e62241ce00131d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-16 12:59:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>price</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-16 12:59:13</sys_created_on>
+            <sys_id>c5cb13e1c30521101e62241ce0013172</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_976337_license_c_u_cmdb_ci_licenses" sys_domain="global" view="Default view">8b7f0325c3c121101e62241ce00131d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-16 12:59:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cmdb_item</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-21 15:42:12</sys_created_on>
+            <sys_id>41017d57c34121101e62241ce001314d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_976337_license_c_u_cmdb_ci_licenses" sys_domain="global" view="Default view">8b7f0325c3c121101e62241ce00131d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-21 15:42:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-21 16:08:03</sys_created_on>
+            <sys_id>bfe6391fc34121101e62241ce00131ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_976337_license_c_u_cmdb_ci_licenses" sys_domain="global" view="Default view">8b7f0325c3c121101e62241ce00131d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-21 16:08:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_name_desired</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-23 14:42:29</sys_created_on>
+            <sys_id>f18633f7c38121101e62241ce001310d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_976337_license_c_u_cmdb_ci_licenses" sys_domain="global" view="Default view">8b7f0325c3c121101e62241ce00131d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-23 14:42:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>true</header>
+            <name>x_976337_license_c_u_cmdb_ci_licenses</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-16 12:05:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8b7f0325c3c121101e62241ce00131d9</sys_id>
+            <sys_name>x_976337_license_c_u_cmdb_ci_licenses</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+            <sys_update_name>sys_ui_section_8b7f0325c3c121101e62241ce00131d9</sys_update_name>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

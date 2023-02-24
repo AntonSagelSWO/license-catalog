@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>License Catalog - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="license_catalog">b2962fd7c33421101e62241ce0013172</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 14:00:47</sys_created_on>
+        <sys_id>16b6efd7c33421101e62241ce00131be</sys_id>
+        <sys_name>License Catalog - Container 1</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sp_container_16b6efd7c33421101e62241ce00131be</sys_update_name>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>

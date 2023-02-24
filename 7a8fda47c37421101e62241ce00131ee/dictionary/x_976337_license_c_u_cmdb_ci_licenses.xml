@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="34084b2dc38121101e62241ce001313f" extends="cmdb_ci" label="Licenses" max_length="40" name="x_976337_license_c_u_cmdb_ci_licenses" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="CMDB-ITEM" mandatory="true" max_length="32" name="cmdb_item" reference="sc_cat_item" type="reference"/>
+        <element choice="2" label="Kind" mandatory="true" max_length="40" name="kind" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Coding"/>
+                <element inactive_on_update="false" label="Coding" sequence="0"/>
+                <element inactive_on_update="false" label="Coding" sequence="0"/>
+                <element inactive="true" inactive_on_update="true" label="Coding" sequence="1"/>
+            </choice>
+        </element>
+        <element label="NoApproveNeeded" max_length="32" name="noapproveneeded" reference="sys_user_role" type="reference"/>
+        <element choice="2" label="PaymentType" mandatory="true" max_length="40" name="paymenttype" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Free" sequence="0"/>
+                <element inactive_on_update="false" label="Free" sequence="0"/>
+                <element inactive_on_update="false" label="Free" sequence="0"/>
+                <element inactive="true" inactive_on_update="true" label="Free" sequence="0"/>
+            </choice>
+        </element>
+        <element label="Price" max_length="20" name="price" type="price"/>
+        <element choice="2" label="Publisher" mandatory="true" max_length="40" name="publisher" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Apple"/>
+                <element inactive_on_update="false" label="Microsoft"/>
+                <element inactive_on_update="false" label="SoftwareOne"/>
+                <element inactive="true" inactive_on_update="true" label="Apple" sequence="0"/>
+            </choice>
+        </element>
+        <element attributes="actual_state=name" label="Name (Desired)" max_length="255" name="u_name_desired" type="string"/>
+    </element>
+</database>

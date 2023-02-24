@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_view_workspace">
+    <sysrule_view_workspace action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <default_tab_focus>Details</default_tab_focus>
+        <default_tab_order>true</default_tab_order>
+        <description/>
+        <disable_section_collapse>false</disable_section_collapse>
+        <experience_restricted>true</experience_restricted>
+        <hide_details>false</hide_details>
+        <hide_journal_input_fields>false</hide_journal_input_fields>
+        <hide_section_menu>false</hide_section_menu>
+        <name>u_cmdb_ci_licenses - cmdb_workspace</name>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sysrule_view_workspace</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-16 11:33:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0f084f2dc38121101e62241ce00131d2</sys_id>
+        <sys_name>u_cmdb_ci_licenses - cmdb_workspace</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sysrule_view_workspace_0f084f2dc38121101e62241ce00131d2</sys_update_name>
+        <table>u_cmdb_ci_licenses</table>
+        <tabs_order/>
+        <view display_value="CMDB Agent Workspace" name="cmdb_workspace">169d5a872300001009d5110d96bf6537</view>
+        <workspace/>
+    </sysrule_view_workspace>
+</record_update>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="DELETE">
+        <access>package_private</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <caller_access/>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>false</delete_access>
+        <is_extendable>false</is_extendable>
+        <label>licenses </label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_976337_license_c_licenses</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>false</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:36:59</sys_created_on>
+        <sys_id>35bf1f13c33421101e62241ce001315f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>licenses </sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sys_db_object_35bf1f13c33421101e62241ce001315f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:36:59</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="x_976337_license_c.licenses_admin" name="x_976337_license_c.licenses_admin">b9416b53c33421101e62241ce001310f</user_role>
+        <ws_access>false</ws_access>
+    </sys_db_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</application>
+        <file_path/>
+        <instance_id>70c7244cdb65cd105749cac505961953</instance_id>
+        <instance_name>dev124633</instance_name>
+        <name>sys_db_object_35bf1f13c33421101e62241ce001315f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>package_private</access><actions_access>false</actions_access><alter_access>false</alter_access><caller_access/><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><is_extendable>false</is_extendable><label>licenses </label><live_feed_enabled>false</live_feed_enabled><name>x_976337_license_c_licenses</name><number_ref/><provider_class/><read_access>false</read_access><scriptable_table>false</scriptable_table><super_class/><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-09 13:36:59</sys_created_on><sys_id>35bf1f13c33421101e62241ce001315f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>licenses </sys_name><sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package><sys_policy/><sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope><sys_update_name>sys_db_object_35bf1f13c33421101e62241ce001315f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-09 13:36:59</sys_updated_on><update_access>false</update_access><user_role display_value="x_976337_license_c.licenses_admin" name="x_976337_license_c.licenses_admin">b9416b53c33421101e62241ce001310f</user_role><ws_access>false</ws_access></sys_db_object></record_update>]]></payload>
+        <payload_hash>-1418458869</payload_hash>
+        <record_name>licenses </record_name>
+        <reverted_from/>
+        <source>4240e647c37421101e62241ce0013187</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:37:00</sys_created_on>
+        <sys_id>8a41a793c33421101e62241ce00131a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1863664caaa0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:37:00</sys_updated_on>
+        <type>Table</type>
+        <update_guid>c241a793bd34211036095c2e4ef1dfa3</update_guid>
+        <update_guid_history>c241a793bd34211036095c2e4ef1dfa3:-1418458869</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 12:48:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_object">sys_db_object</sys_db_object>
+        <sys_id>02142c5fca0c49c480092e8d9150db90</sys_id>
+        <sys_metadata>35bf1f13c33421101e62241ce001315f</sys_metadata>
+        <sys_name>licenses </sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_scope_delete display_value="">0579e4a0b0a84e788031a4237a8241c9</sys_scope_delete>
+        <sys_update_name>sys_db_object_35bf1f13c33421101e62241ce001315f</sys_update_name>
+        <sys_update_version display_value="sys_db_object_35bf1f13c33421101e62241ce001315f">8a41a793c33421101e62241ce00131a3</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

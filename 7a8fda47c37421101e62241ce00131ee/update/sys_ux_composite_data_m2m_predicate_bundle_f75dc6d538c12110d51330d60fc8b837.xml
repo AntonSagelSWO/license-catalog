@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_predicate_bundle">
+    <sys_ux_composite_data_m2m_predicate_bundle action="INSERT_OR_UPDATE">
+        <dataset display_value="Custom Portal Catalog Item page - Related Items dataset">3f5dc6d5c5c121102b4fd82cb8219a38</dataset>
+        <order/>
+        <predicate_bundle display_value="Custom portal - Related items">bf5dc6d587c121105141f008ce7f1137</predicate_bundle>
+        <sys_class_name>sys_ux_composite_data_m2m_predicate_bundle</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-02-15 12:38:15</sys_created_on>
+        <sys_id>f75dc6d538c12110d51330d60fc8b837</sys_id>
+        <sys_name/>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_predicate_bundle_f75dc6d538c12110d51330d60fc8b837</sys_update_name>
+    </sys_ux_composite_data_m2m_predicate_bundle>
+</record_update>

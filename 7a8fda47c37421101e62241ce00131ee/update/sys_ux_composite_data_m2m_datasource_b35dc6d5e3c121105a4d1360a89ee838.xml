@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_datasource">
+    <sys_ux_composite_data_m2m_datasource action="INSERT_OR_UPDATE">
+        <dataset display_value="Custom Portal Landing - My Tasks Dataset">f35dc6d536c121100e77ce9678293739</dataset>
+        <datasource display_value="Custom Portal Landing - My Tasks Datasource (Task table)">7b5dc6d5e3c12110f145813e1b195a38</datasource>
+        <sys_class_name>sys_ux_composite_data_m2m_datasource</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-02-15 12:38:17</sys_created_on>
+        <sys_id>b35dc6d5e3c121105a4d1360a89ee838</sys_id>
+        <sys_name/>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_datasource_b35dc6d5e3c121105a4d1360a89ee838</sys_update_name>
+    </sys_ux_composite_data_m2m_datasource>
+</record_update>

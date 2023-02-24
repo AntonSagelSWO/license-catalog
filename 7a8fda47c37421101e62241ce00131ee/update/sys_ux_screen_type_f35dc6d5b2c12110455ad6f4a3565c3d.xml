@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_type">
+    <sys_ux_screen_type action="INSERT_OR_UPDATE">
+        <description/>
+        <name>Task Approved</name>
+        <sys_class_name>sys_ux_screen_type</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-02-15 12:38:16</sys_created_on>
+        <sys_id>f35dc6d5b2c12110455ad6f4a3565c3d</sys_id>
+        <sys_name>Task Approved</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sys_ux_screen_type_f35dc6d5b2c12110455ad6f4a3565c3d</sys_update_name>
+    </sys_ux_screen_type>
+    <sys_translated_text action="delete_multiple" query="documentkey=f35dc6d5b2c12110455ad6f4a3565c3d"/>
+</record_update>

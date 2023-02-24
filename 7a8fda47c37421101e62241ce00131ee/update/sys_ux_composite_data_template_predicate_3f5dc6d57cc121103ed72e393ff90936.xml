@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_template_predicate">
+    <sys_ux_composite_data_template_predicate action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sc_req_item">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <custom_condition/>
+        <custom_field_list/>
+        <field_list>due_date,cat_item.picture,short_description,price,recurring_price,recurring_frequency,state,number,cat_item.name</field_list>
+        <name>My Requests - Requested item predicate</name>
+        <order/>
+        <predicate_bundle display_value="My requests - reqested item bundle">ff5dc6d5b0c1211061557622368d4f37</predicate_bundle>
+        <required_roles/>
+        <sys_class_name>sys_ux_composite_data_template_predicate</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-02-15 12:38:16</sys_created_on>
+        <sys_id>3f5dc6d57cc121103ed72e393ff90936</sys_id>
+        <sys_name>My Requests - Requested item predicate</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sys_ux_composite_data_template_predicate_3f5dc6d57cc121103ed72e393ff90936</sys_update_name>
+        <table>sc_req_item</table>
+        <ux_template display_value="Custom Portal Landing - My Requests template">335dc6d506c12110d086c0623cdd1437</ux_template>
+    </sys_ux_composite_data_template_predicate>
+</record_update>

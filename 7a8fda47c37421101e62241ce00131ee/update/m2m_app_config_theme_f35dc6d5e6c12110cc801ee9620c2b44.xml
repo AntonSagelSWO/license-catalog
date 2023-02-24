@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="INSERT_OR_UPDATE">
+        <applicability display_value="Public">fb5dc6d574c12110b46d72800cdba443</applicability>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-02-15 12:38:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f35dc6d5e6c12110cc801ee9620c2b44</sys_id>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>m2m_app_config_theme_f35dc6d5e6c12110cc801ee9620c2b44</sys_update_name>
+        <theme display_value="Light Theme">7f5dc6d56ac12110033adf7fe5b8d443</theme>
+        <ux_app_configuration display_value="License Catalog Config">375dc6d5c3c121101e62241ce0013109</ux_app_configuration>
+    </m2m_app_config_theme>
+</record_update>

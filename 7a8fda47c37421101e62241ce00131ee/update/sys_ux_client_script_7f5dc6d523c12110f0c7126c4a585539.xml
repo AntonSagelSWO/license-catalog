@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Order success">335dc6d5d0c12110f9fdedaa661faa3b</macroponent>
+        <name>View request redirection</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    let {
+        table,
+        sysId
+    } = api.context.props;
+
+    const route = "record_request";
+
+    if (table != "sc_request") {
+        table = table == "incident" ? "incident" : "task";
+        api.emit('NAV_ITEM_SELECTED', {
+            route,
+            fields: {
+                table,
+                sysId
+            }
+        });
+    } else {
+        api.emit('NAV_ITEM_SELECTED', {
+            route,
+            fields: {
+                table : "sc_req_item",
+                sysId : api.data.request_item_data_broker_1.output.sysId
+            }
+        });
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-02-15 12:38:16</sys_created_on>
+        <sys_id>7f5dc6d523c12110f0c7126c4a585539</sys_id>
+        <sys_name>View request redirection</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sys_ux_client_script_7f5dc6d523c12110f0c7126c4a585539</sys_update_name>
+        <target/>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

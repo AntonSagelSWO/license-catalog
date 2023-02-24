@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_predicate_bundle">
+    <sys_ux_composite_data_m2m_predicate_bundle action="INSERT_OR_UPDATE">
+        <dataset display_value="Custom Portal Landing - My Tasks Dataset">f35dc6d536c121100e77ce9678293739</dataset>
+        <order/>
+        <predicate_bundle display_value="My Tasks - Task bundle">bf5dc6d5c5c1211042e17068aa4c7336</predicate_bundle>
+        <sys_class_name>sys_ux_composite_data_m2m_predicate_bundle</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-02-15 12:38:15</sys_created_on>
+        <sys_id>bb5dc6d5dac1211088ddec3bab2eff37</sys_id>
+        <sys_name/>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_predicate_bundle_bb5dc6d5dac1211088ddec3bab2eff37</sys_update_name>
+    </sys_ux_composite_data_m2m_predicate_bundle>
+</record_update>

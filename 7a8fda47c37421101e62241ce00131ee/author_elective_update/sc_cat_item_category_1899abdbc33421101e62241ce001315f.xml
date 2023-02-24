@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Really Expensive VSCode">4a39e3dbc33421101e62241ce0013161</sc_cat_item>
+        <sc_category display_value="Not Free">6f59a7dbc33421101e62241ce00131dd</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 14:13:12</sys_created_on>
+        <sys_id>1899abdbc33421101e62241ce001315f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Not Free.Really Expensive VSCode</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sc_cat_item_category_1899abdbc33421101e62241ce001315f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:13:12</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</application>
+        <file_path/>
+        <instance_id>70c7244cdb65cd105749cac505961953</instance_id>
+        <instance_name>dev124633</instance_name>
+        <name>sc_cat_item_category_1899abdbc33421101e62241ce001315f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Really Expensive VSCode">4a39e3dbc33421101e62241ce0013161</sc_cat_item><sc_category display_value="Not Free">6f59a7dbc33421101e62241ce00131dd</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-09 14:13:12</sys_created_on><sys_id>1899abdbc33421101e62241ce001315f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Not Free.Really Expensive VSCode</sys_name><sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package><sys_policy/><sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope><sys_update_name>sc_cat_item_category_1899abdbc33421101e62241ce001315f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-09 14:13:12</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-597114762</payload_hash>
+        <record_name>Not Free.Really Expensive VSCode</record_name>
+        <reverted_from/>
+        <source>4240e647c37421101e62241ce0013187</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 14:13:12</sys_created_on>
+        <sys_id>9899abdbc33421101e62241ce0013162</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1863685edc60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:13:12</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>d099abdba6342110a7d62ca1cd7db462</update_guid>
+        <update_guid_history>d099abdba6342110a7d62ca1cd7db462:-597114762</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Not Free.Really Expensive VSCode">fa75e490c35921101e62241ce0013124</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 12:46:05</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>5d6e202d2e4c407497853f1ea5d5b679</sys_id>
+        <sys_metadata>1899abdbc33421101e62241ce001315f</sys_metadata>
+        <sys_name>Not Free.Really Expensive VSCode</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_scope_delete display_value="">0579e4a0b0a84e788031a4237a8241c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_1899abdbc33421101e62241ce001315f</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_1899abdbc33421101e62241ce001315f">9899abdbc33421101e62241ce0013162</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

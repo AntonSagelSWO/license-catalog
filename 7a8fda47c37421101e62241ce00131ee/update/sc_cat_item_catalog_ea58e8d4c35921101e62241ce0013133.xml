@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="test">a44860d4c35921101e62241ce00131cf</sc_cat_item>
+        <sc_catalog display_value="LicenseCatalog">f5866014c35921101e62241ce0013156</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 12:58:38</sys_created_on>
+        <sys_id>ea58e8d4c35921101e62241ce0013133</sys_id>
+        <sys_name>LicenseCatalog.test</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_ea58e8d4c35921101e62241ce0013133</sys_update_name>
+    </sc_cat_item_catalog>
+</record_update>

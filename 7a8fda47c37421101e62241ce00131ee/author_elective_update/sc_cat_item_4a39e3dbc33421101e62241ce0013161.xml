@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item">
+    <sc_cat_item action="DELETE">
+        <access_type>restricted</access_type>
+        <active>false</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <category/>
+        <checked_out>false</checked_out>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan/>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description/>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow display_value="License Request">88045b17c3f021101e62241ce00131f7</flow_designer_flow>
+        <fulfillment_automation_level>fully_automated</fulfillment_automation_level>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>false</ignore_price>
+        <image/>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Really Expensive VSCode</name>
+        <no_attachment_v2>true</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>true</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>true</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>true</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
+        <picture/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=4a39e3dbc33421101e62241ce0013161&amp;sysparm_preview=true", "summary");</preview>
+        <price>1000000000</price>
+        <published_ref/>
+        <recurring_frequency>daily</recurring_frequency>
+        <recurring_price>1</recurring_price>
+        <request_method/>
+        <roles/>
+        <sc_catalogs/>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template/>
+        <short_description/>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <state>published</state>
+        <sys_class_name>sc_cat_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 14:13:12</sys_created_on>
+        <sys_id>4a39e3dbc33421101e62241ce0013161</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Really Expensive VSCode</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sc_cat_item_4a39e3dbc33421101e62241ce0013161</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-24 12:46:05</sys_updated_on>
+        <taxonomy_topic/>
+        <template/>
+        <template_manager_roles/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item>
+    <sys_translated_text action="DELETE" query="documentkey=4a39e3dbc33421101e62241ce0013161"/>
+    <fx_price action="DELETE" query="id=4a39e3dbc33421101e62241ce0013161"/>
+    <fx_price action="DELETE">
+        <amount>1000000000</amount>
+        <currency display_value="USD">USD</currency>
+        <field>price</field>
+        <id>4a39e3dbc33421101e62241ce0013161</id>
+        <parent/>
+        <reference_amount>1000000000</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 14:13:12</sys_created_on>
+        <sys_id>18992f9bc33421101e62241ce00131fd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:22:04</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="DELETE">
+        <amount>1</amount>
+        <currency display_value="USD">USD</currency>
+        <field>recurring_price</field>
+        <id>4a39e3dbc33421101e62241ce0013161</id>
+        <parent/>
+        <reference_amount>1</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 14:13:12</sys_created_on>
+        <sys_id>18992f9bc33421101e62241ce00131fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:13:12</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</application>
+        <file_path/>
+        <instance_id>70c7244cdb65cd105749cac505961953</instance_id>
+        <instance_name>dev124633</instance_name>
+        <name>sc_cat_item_4a39e3dbc33421101e62241ce0013161</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item"><sc_cat_item action="INSERT_OR_UPDATE"><access_type>restricted</access_type><active>false</active><availability>on_desktop</availability><billable>false</billable><category/><checked_out>false</checked_out><cost>0</cost><custom_cart/><delivery_plan/><delivery_plan_script/><delivery_time>1970-01-03 00:00:00</delivery_time><description/><display_price_property>non_zero</display_price_property><entitlement_script/><flow_designer_flow display_value="License Request">88045b17c3f021101e62241ce00131f7</flow_designer_flow><fulfillment_automation_level>fully_automated</fulfillment_automation_level><group/><hide_sp>false</hide_sp><icon/><ignore_price>false</ignore_price><image/><location/><mandatory_attachment>false</mandatory_attachment><meta/><mobile_hide_price>false</mobile_hide_price><mobile_picture/><mobile_picture_type>use_desktop_picture</mobile_picture_type><model/><name>Really Expensive VSCode</name><no_attachment_v2>true</no_attachment_v2><no_cart>false</no_cart><no_cart_v2>false</no_cart_v2><no_delivery_time_v2>true</no_delivery_time_v2><no_order>false</no_order><no_order_now>false</no_order_now><no_proceed_checkout>false</no_proceed_checkout><no_quantity>false</no_quantity><no_quantity_v2>true</no_quantity_v2><no_search>false</no_search><no_wishlist_v2>true</no_wishlist_v2><omit_price>false</omit_price><order>0</order><ordered_item_link/><owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner><picture/><preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=4a39e3dbc33421101e62241ce0013161&amp;sysparm_preview=true", "summary");</preview><price>1000000000</price><published_ref/><recurring_frequency>daily</recurring_frequency><recurring_price>1</recurring_price><request_method/><roles/><sc_catalogs/><sc_ic_item_staging/><sc_ic_version/><sc_template/><short_description/><show_variable_help_on_load>false</show_variable_help_on_load><start_closed>false</start_closed><state>published</state><sys_class_name>sc_cat_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-09 14:13:12</sys_created_on><sys_id>4a39e3dbc33421101e62241ce0013161</sys_id><sys_mod_count>8</sys_mod_count><sys_name>Really Expensive VSCode</sys_name><sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package><sys_policy/><sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope><sys_update_name>sc_cat_item_4a39e3dbc33421101e62241ce0013161</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-24 12:46:05</sys_updated_on><taxonomy_topic/><template/><template_manager_roles/><type>item</type><use_sc_layout>true</use_sc_layout><vendor/><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><workflow/></sc_cat_item><sys_translated_text action="delete_multiple" query="documentkey=4a39e3dbc33421101e62241ce0013161"/><fx_price action="delete_multiple" query="id=4a39e3dbc33421101e62241ce0013161"/><fx_price action="INSERT_OR_UPDATE"><amount>1000000000</amount><currency display_value="USD">USD</currency><field>price</field><id>4a39e3dbc33421101e62241ce0013161</id><parent/><reference_amount>1000000000</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-09 14:13:12</sys_created_on><sys_id>18992f9bc33421101e62241ce00131fd</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-09 14:22:04</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>1</amount><currency display_value="USD">USD</currency><field>recurring_price</field><id>4a39e3dbc33421101e62241ce0013161</id><parent/><reference_amount>1</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-09 14:13:12</sys_created_on><sys_id>18992f9bc33421101e62241ce00131fe</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-09 14:13:12</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price></record_update>]]></payload>
+        <payload_hash>-1665415351</payload_hash>
+        <record_name>Really Expensive VSCode</record_name>
+        <reverted_from/>
+        <source>4240e647c37421101e62241ce0013187</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 12:46:06</sys_created_on>
+        <sys_id>b675e490c35921101e62241ce001312b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186837592e00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-24 12:46:06</sys_updated_on>
+        <type>Catalog Item</type>
+        <update_guid>be75e490dc592110004219db1a2ccc2a</update_guid>
+        <update_guid_history>be75e490dc592110004219db1a2ccc2a:-1665415351,b608b3bb5c8121106f00e60de0c1b122:1729238629,f0877b7bab812110c479a567c0b53b8a:-629474828,7727737b6d812110862ee11d2855907a:1729238629,2196751fe14121103e0d1c0379127120:-629474828,9e36311fdb4121102c029d2a08b0aa36:1729238629,2854a15bb6012110cf897f0bfc0882b9:440412036,269b6f5f7534211080e301bd024eead5:-2007447104,d68b2f5fee342110ad14a096d02a996a:1622014192,1899abdbe234211048fcb65411506c64:1112253580</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Really Expensive VSCode">7a75e490c35921101e62241ce0013148</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 12:46:06</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item">sc_cat_item</sys_db_object>
+        <sys_id>398dfb47e6124c40aa82275d05ea1000</sys_id>
+        <sys_metadata>4a39e3dbc33421101e62241ce0013161</sys_metadata>
+        <sys_name>Really Expensive VSCode</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_scope_delete display_value="">0579e4a0b0a84e788031a4237a8241c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_4a39e3dbc33421101e62241ce0013161</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_4a39e3dbc33421101e62241ce0013161">b675e490c35921101e62241ce001312b</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

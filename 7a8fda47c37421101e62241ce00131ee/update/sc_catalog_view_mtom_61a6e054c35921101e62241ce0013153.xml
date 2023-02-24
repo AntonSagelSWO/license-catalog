@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_catalog_view_mtom">
+    <sc_catalog_view_mtom action="INSERT_OR_UPDATE">
+        <default>true</default>
+        <sc_catalog display_value="LicenseCatalog">f5866014c35921101e62241ce0013156</sc_catalog>
+        <sys_class_name>sc_catalog_view_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 12:51:12</sys_created_on>
+        <sys_id>61a6e054c35921101e62241ce0013153</sys_id>
+        <sys_name>LicenseCatalog.catalog_licensecatalog</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_portal_page display_value="catalog_licensecatalog">25a66890c35921101e62241ce0013132</sys_portal_page>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sc_catalog_view_mtom_61a6e054c35921101e62241ce0013153</sys_update_name>
+    </sc_catalog_view_mtom>
+</record_update>

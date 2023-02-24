@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category">
+    <sc_category action="DELETE">
+        <active>true</active>
+        <description/>
+        <entitlement_script/>
+        <header_icon/>
+        <homepage_image/>
+        <homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer>
+        <icon/>
+        <image/>
+        <location/>
+        <mobile_hide_description>false</mobile_hide_description>
+        <mobile_picture/>
+        <mobile_subcategory_render_type>list</mobile_subcategory_render_type>
+        <module/>
+        <order>0</order>
+        <parent/>
+        <roles/>
+        <sc_catalog display_value="Licens Catalog">fa01db53c3f021101e62241ce00131d0</sc_catalog>
+        <sys_class_name>sc_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 12:27:42</sys_created_on>
+        <sys_id>c1515393c3f021101e62241ce0013144</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Free Software</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sc_category_c1515393c3f021101e62241ce0013144</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 12:27:42</sys_updated_on>
+        <title>Free Software</title>
+    </sc_category>
+    <sys_translated_text action="DELETE" query="documentkey=c1515393c3f021101e62241ce0013144"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</application>
+        <file_path/>
+        <instance_id>70c7244cdb65cd105749cac505961953</instance_id>
+        <instance_name>dev124633</instance_name>
+        <name>sc_category_c1515393c3f021101e62241ce0013144</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category"><sc_category action="INSERT_OR_UPDATE"><active>true</active><description/><entitlement_script/><header_icon/><homepage_image/><homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer><icon/><image/><location/><mobile_hide_description>false</mobile_hide_description><mobile_picture/><mobile_subcategory_render_type>list</mobile_subcategory_render_type><module/><order>0</order><parent/><roles/><sc_catalog display_value="Licens Catalog">fa01db53c3f021101e62241ce00131d0</sc_catalog><sys_class_name>sc_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-09 12:27:42</sys_created_on><sys_id>c1515393c3f021101e62241ce0013144</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Free Software</sys_name><sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package><sys_policy/><sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope><sys_update_name>sc_category_c1515393c3f021101e62241ce0013144</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-09 12:27:42</sys_updated_on><title>Free Software</title></sc_category><sys_translated_text action="delete_multiple" query="documentkey=c1515393c3f021101e62241ce0013144"/></record_update>]]></payload>
+        <payload_hash>1686651123</payload_hash>
+        <record_name>Free Software</record_name>
+        <reverted_from/>
+        <source>4240e647c37421101e62241ce0013187</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 12:27:42</sys_created_on>
+        <sys_id>03619393c3f021101e62241ce00131f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186362558d20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 12:27:42</sys_updated_on>
+        <type>Category</type>
+        <update_guid>4b619393ccf02110593f5d1c74e2c0f2</update_guid>
+        <update_guid_history>4b619393ccf02110593f5d1c74e2c0f2:1686651123</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Free Software">0e766c14c35921101e62241ce001310d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 12:50:25</sys_created_on>
+        <sys_db_object display_value="" name="sc_category">sc_category</sys_db_object>
+        <sys_id>05b228fbcd26445085fc20ec37202499</sys_id>
+        <sys_metadata>c1515393c3f021101e62241ce0013144</sys_metadata>
+        <sys_name>Free Software</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_scope_delete display_value="">0579e4a0b0a84e788031a4237a8241c9</sys_scope_delete>
+        <sys_update_name>sc_category_c1515393c3f021101e62241ce0013144</sys_update_name>
+        <sys_update_version display_value="sc_category_c1515393c3f021101e62241ce0013144">03619393c3f021101e62241ce00131f3</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

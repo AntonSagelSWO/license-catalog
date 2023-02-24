@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>price</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-16 12:47:37</sys_created_on>
+        <sys_id>59091bedc3c121101e62241ce0013184</sys_id>
+        <sys_name>price</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sys_ui_policy_action_59091bedc3c121101e62241ce0013184</sys_update_name>
+        <table>x_976337_license_c_u_cmdb_ci_licenses</table>
+        <ui_policy display_value="add Price Field if Price is not &quot;Free&quot;">04065b2dc3c121101e62241ce00131ef</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

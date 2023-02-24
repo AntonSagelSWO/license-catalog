@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Task rejected">f75dc6d590c121101a0f33592010783a</macroponent>
+        <name>Home redirection</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    const route = "landing";
+    api.emit('NAV_ITEM_SELECTED', {
+        route,
+        params: {
+            refresh: Date.now()
+        },
+        fields: {}
+    });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-02-15 12:38:17</sys_created_on>
+        <sys_id>b75dc6d565c1211062b803737aa66a3a</sys_id>
+        <sys_name>Home redirection</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sys_ux_client_script_b75dc6d565c1211062b803737aa66a3a</sys_update_name>
+        <target/>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

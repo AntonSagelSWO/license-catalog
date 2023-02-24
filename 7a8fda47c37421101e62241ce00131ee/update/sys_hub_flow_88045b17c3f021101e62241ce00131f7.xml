@@ -1,0 +1,1949 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>license_request</internal_name>
+        <label_cache>[{"name":"5a578c8c-55c1-43c7-808b-eef8e122eb0b.context","label":"5 - Dynamic Flow➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"faa02e19-904a-4453-89eb-4288acfccba9.__dont_treat_as_error__","label":"3 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"faa02e19-904a-4453-89eb-4288acfccba9.__action_status__","label":"3 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"faa02e19-904a-4453-89eb-4288acfccba9.table_name","label":"3 - Create Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"faa02e19-904a-4453-89eb-4288acfccba9.record","label":"3 - Create Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fbc7fa21-8523-4e3a-8fff-574c4fafc19d.password","label":"3 - create VSCode Account➛Password","reference_display":"Password","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"29eae128-0a7f-4e5d-a458-6123b6b748d7"}},{"name":"fbc7fa21-8523-4e3a-8fff-574c4fafc19d.accountid","label":"3 - create VSCode Account➛AccountID","reference_display":"AccountID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"cca2e957-69ad-4077-8285-5d7ee062b60d"}},{"name":"Service Catalog_1.request_item.requested_for.first_name","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Service Catalog_1.request_item.cat_item.name","label":"Trigger - Service Catalog➛Requested Item Record➛Item➛Name","reference":"","reference_display":"Name","type":"translated_text","base_type":"translated_text","parent_table_name":"sc_cat_item","column_name":"name"},{"name":"Service Catalog_1.request_item.opened_by.email","label":"Trigger - Service Catalog➛Requested Item Record➛Opened by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"default_search_field":"number"}},{"name":"71a6c382-f0a4-4a66-9bbb-f725cb464815.__dont_treat_as_error__","label":"3 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"71a6c382-f0a4-4a66-9bbb-f725cb464815.__action_status__","label":"3 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"71a6c382-f0a4-4a66-9bbb-f725cb464815.email","label":"3 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item.cat_item.cost","label":"Trigger - Service Catalog➛Requested Item Record➛Item➛Cost","reference":"","reference_display":"Cost","type":"decimal","base_type":"decimal","parent_table_name":"sc_cat_item","column_name":"cost"},{"name":"fbc7fa21-8523-4e3a-8fff-574c4fafc19d.__action_status__","label":"3 - create VSCode Account➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"1b498141-a20b-4991-8a16-3d888fa325a0"}},{"name":"fbc7fa21-8523-4e3a-8fff-574c4fafc19d.__dont_treat_as_error__","label":"3 - create VSCode Account➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"29ec5331-9f39-4461-8907-35d97505c24e"}},{"name":"Service Catalog_1.request_item.requested_for.email","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"5c8d39d4-1bb2-4669-9be9-e75e6c6ea127.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5c8d39d4-1bb2-4669-9be9-e75e6c6ea127.__action_status__","label":"2 - Ask For Approval➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5c8d39d4-1bb2-4669-9be9-e75e6c6ea127.__dont_treat_as_error__","label":"2 - Ask For Approval➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item.requested_for.manager","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"c9bbcc92-aaea-4eee-91b7-1fefdaf75418.record","label":"7 - Create Record➛licenses  Record","reference":"x_976337_license_c_licenses","reference_display":"licenses  Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c9bbcc92-aaea-4eee-91b7-1fefdaf75418.table_name","label":"7 - Create Record➛licenses  Table","reference":"x_976337_license_c_licenses","reference_display":"licenses  Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c9bbcc92-aaea-4eee-91b7-1fefdaf75418.__action_status__","label":"7 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c9bbcc92-aaea-4eee-91b7-1fefdaf75418.__dont_treat_as_error__","label":"7 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fa556fd8-f918-4bd1-a13d-a1b1eb445b9c.accountid","label":"5 - create VSCode Account➛AccountID","reference_display":"AccountID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"cca2e957-69ad-4077-8285-5d7ee062b60d"}},{"name":"fa556fd8-f918-4bd1-a13d-a1b1eb445b9c.__action_status__","label":"5 - create VSCode Account➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"1b498141-a20b-4991-8a16-3d888fa325a0"}},{"name":"fa556fd8-f918-4bd1-a13d-a1b1eb445b9c.password","label":"5 - create VSCode Account➛Password","reference_display":"Password","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"29eae128-0a7f-4e5d-a458-6123b6b748d7"}},{"name":"fa556fd8-f918-4bd1-a13d-a1b1eb445b9c.__dont_treat_as_error__","label":"5 - create VSCode Account➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"29ec5331-9f39-4461-8907-35d97505c24e"}},{"name":"a8f2e26c-e287-4d9a-bb07-7bda67287017.email","label":"6 - Send Email➛email","reference":"sys_email","reference_display":"email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8f2e26c-e287-4d9a-bb07-7bda67287017.__action_status__","label":"6 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8f2e26c-e287-4d9a-bb07-7bda67287017.__dont_treat_as_error__","label":"6 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item.price","label":"Trigger - Service Catalog➛Requested Item Record➛Price","reference":"","reference_display":"Price","type":"currency","base_type":"currency","parent_table_name":"sc_req_item","column_name":"price"}]</label_cache>
+        <master_snapshot>22056797c33421101e62241ce001318c</master_snapshot>
+        <name>License Request</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>4b05a797c33421101e62241ce001316f</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 12:38:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>88045b17c3f021101e62241ce00131f7</sys_id>
+        <sys_name>License Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sys_hub_flow_88045b17c3f021101e62241ce00131f7</sys_update_name>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=88045b17c3f021101e62241ce00131f7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=88045b17c3f021101e62241ce00131f7"/>
+    <sys_flow_catalog_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <catalog_item/>
+        <name/>
+        <run_flow_in>background</run_flow_in>
+        <sys_class_name>sys_flow_catalog_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4b05a797c33421101e62241ce001316f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:27</sys_updated_on>
+    </sys_flow_catalog_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=88045b17c3f021101e62241ce00131f7"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=88045b17c3f021101e62241ce00131f7^sys_idNOT INa28d179fc3f021101e62241ce001318f"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="License Request">88045b17c3f021101e62241ce00131f7</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:20:39</sys_created_on>
+        <sys_id>a28d179fc3f021101e62241ce001318f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:15:55</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a28d179fc3f021101e62241ce001318f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=88045b17c3f021101e62241ce00131f7"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=88045b17c3f021101e62241ce00131f7^sys_idNOT IN8c045b17c3f021101e62241ce00131f9"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>88045b17c3f021101e62241ce00131f7</id>
+        <name>License Request</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 12:38:58</sys_created_on>
+        <sys_id>8c045b17c3f021101e62241ce00131f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 12:38:58</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=8c045b17c3f021101e62241ce00131f9"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=88045b17c3f021101e62241ce00131f7^sys_idNOT IN668d179fc3f021101e62241ce0013187,a28d179fc3f021101e62241ce0013183"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="License Request">88045b17c3f021101e62241ce00131f7</model>
+        <model_id>88045b17c3f021101e62241ce00131f7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_88045b17c3f021101e62241ce00131f7</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:20:39</sys_created_on>
+        <sys_id>668d179fc3f021101e62241ce0013187</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:15:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="License Request">88045b17c3f021101e62241ce00131f7</model>
+        <model_id>88045b17c3f021101e62241ce00131f7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_88045b17c3f021101e62241ce00131f7</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:20:39</sys_created_on>
+        <sys_id>a28d179fc3f021101e62241ce0013183</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:15:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=88045b17c3f021101e62241ce00131f7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=88045b17c3f021101e62241ce00131f7"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=88045b17c3f021101e62241ce00131f7^sys_idNOT IN0aa4af57c33421101e62241ce001311e,1aa4af57c33421101e62241ce0013130,1aa4af57c33421101e62241ce0013163,5ea4af57c33421101e62241ce001315c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="License Request">88045b17c3f021101e62241ce00131f7</flow>
+        <order>2</order>
+        <parent_ui_id>28b48ac3-1aa3-4994-a2ff-9c9876db381a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>0aa4af57c33421101e62241ce001311e</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:15:55</sys_updated_on>
+        <ui_id>5c8d39d4-1bb2-4669-9be9-e75e6c6ea127</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0aa4af57c33421101e62241ce001311e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0aa4af57c33421101e62241ce001311e</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>06a4af57c33421101e62241ce0013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0aa4af57c33421101e62241ce001311e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>42a4af57c33421101e62241ce0013123</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0aa4af57c33421101e62241ce001311e</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>8ea4af57c33421101e62241ce0013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0aa4af57c33421101e62241ce001311e</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>caa4af57c33421101e62241ce0013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0aa4af57c33421101e62241ce001311e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>0aa4af57c33421101e62241ce001311e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>cea4af57c33421101e62241ce0013121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAnyU[{{Service Catalog_1.request_item.requested_for.manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>0aa4af57c33421101e62241ce001311e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>cea4af57c33421101e62241ce0013120</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>0aa4af57c33421101e62241ce001311e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>0ea4af57c33421101e62241ce0013121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>0aa4af57c33421101e62241ce001311e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>86a4af57c33421101e62241ce0013121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>0aa4af57c33421101e62241ce001311e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>4aa4af57c33421101e62241ce0013121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>0aa4af57c33421101e62241ce001311e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>82a4af57c33421101e62241ce0013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0aa4af57c33421101e62241ce001311e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0aa4af57c33421101e62241ce001311e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="create VSCode Account">c24ddf5fc3f021101e62241ce00131a6</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="License Request">88045b17c3f021101e62241ce00131f7</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>1aa4af57c33421101e62241ce0013130</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:15:56</sys_updated_on>
+        <ui_id>fa556fd8-f918-4bd1-a13d-a1b1eb445b9c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1aa4af57c33421101e62241ce0013130"/>
+    <sys_element_mapping action="delete_multiple" query="id=1aa4af57c33421101e62241ce0013130"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>email</field>
+        <id>1aa4af57c33421101e62241ce0013130</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>5aa4af57c33421101e62241ce0013131</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c24ddf5fc3f021101e62241ce00131a6</table>
+        <value>{{Service Catalog_1.request_item.requested_for.email}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1aa4af57c33421101e62241ce0013130"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1aa4af57c33421101e62241ce0013130"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="License Request">88045b17c3f021101e62241ce00131f7</flow>
+        <order>7</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>1aa4af57c33421101e62241ce0013163</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:15:56</sys_updated_on>
+        <ui_id>c9bbcc92-aaea-4eee-91b7-1fefdaf75418</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1aa4af57c33421101e62241ce0013163"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1aa4af57c33421101e62241ce0013163</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>92a4af57c33421101e62241ce0013165</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <value>x_976337_license_c_licenses</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1aa4af57c33421101e62241ce0013163"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>1aa4af57c33421101e62241ce0013163</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>5ea4af57c33421101e62241ce0013164</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>1aa4af57c33421101e62241ce0013163</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>12a4af57c33421101e62241ce0013165</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>software=VSCode﻿^accountid={{fa556fd8-f918-4bd1-a13d-a1b1eb445b9c.accountid}}^user_email={{Service Catalog_1.request_item.requested_for.email}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1aa4af57c33421101e62241ce0013163"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1aa4af57c33421101e62241ce0013163"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="License Request">88045b17c3f021101e62241ce00131f7</flow>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>5ea4af57c33421101e62241ce001315c</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:15:56</sys_updated_on>
+        <ui_id>a8f2e26c-e287-4d9a-bb07-7bda67287017</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5ea4af57c33421101e62241ce001315c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5ea4af57c33421101e62241ce001315c</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>1ea4af57c33421101e62241ce001315f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5ea4af57c33421101e62241ce001315c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>5ea4af57c33421101e62241ce001315c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>d6a4af57c33421101e62241ce001315f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Hello&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:1f37aae6-6729-4a57-a9a4-7ad768d8aea8}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:1f37aae6-6729-4a57-a9a4-7ad768d8aea8}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Service Catalog &amp;gt; Requested Item Record &amp;gt; Requested for &amp;gt; First name"&gt;&lt;span class="pill-start"&gt;Trigger - Service Catalog&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;First name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_1f37aae6-6729-4a57-a9a4-7ad768d8aea8" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Here is your account:&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;AccountID:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:237940cd-dee8-4fa6-8059-0154d2c75e34}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:237940cd-dee8-4fa6-8059-0154d2c75e34}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="3 &amp;gt; AccountID"&gt;&lt;span class="pill-start"&gt;3&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;AccountID&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_237940cd-dee8-4fa6-8059-0154d2c75e34" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Password:&amp;nbsp;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:0a2f9554-8f3a-43d5-b53a-ce83afb64db0}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="3 &amp;gt; Password"&gt;&lt;span class="pill-start"&gt;3&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Password&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_0a2f9554-8f3a-43d5-b53a-ce83afb64db0" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Remember to change this password right now!&amp;nbsp;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>5ea4af57c33421101e62241ce001315c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>9aa4af57c33421101e62241ce001315f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>Licens for ﻿{{Service Catalog_1.request_item.cat_item.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>5ea4af57c33421101e62241ce001315c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>16a4af57c33421101e62241ce001315f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Service Catalog_1.request_item.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5ea4af57c33421101e62241ce001315c^sys_idNOT INd6a4af57c33421101e62241ce001315e"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>ah_subject</input_name>
+        <instance>5ea4af57c33421101e62241ce001315c</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"ah_subject":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>d6a4af57c33421101e62241ce001315e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5ea4af57c33421101e62241ce001315c"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=88045b17c3f021101e62241ce00131f7"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=88045b17c3f021101e62241ce00131f7^sys_idNOT IN06a4af57c33421101e62241ce0013124,2e8d179fc3f021101e62241ce0013191,d2a4af57c33421101e62241ce0013128"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c6a4af57c33421101e62241ce0013123</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="License Request">88045b17c3f021101e62241ce00131f7</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>28b48ac3-1aa3-4994-a2ff-9c9876db381a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>06a4af57c33421101e62241ce0013124</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:15:56</sys_updated_on>
+        <ui_id>f9e37387-d0f2-4a3a-9616-fb3d64e41b75</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=06a4af57c33421101e62241ce0013124"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>06a4af57c33421101e62241ce0013124</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>96a4af57c33421101e62241ce0013127</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <value>request Approved</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=06a4af57c33421101e62241ce0013124"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>06a4af57c33421101e62241ce0013124</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>16a4af57c33421101e62241ce0013127</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{5c8d39d4-1bb2-4669-9be9-e75e6c6ea127.approval_state}}=rejected</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>06a4af57c33421101e62241ce0013124</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>52a4af57c33421101e62241ce0013127</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=06a4af57c33421101e62241ce0013124"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=06a4af57c33421101e62241ce0013124"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ae8d179fc3f021101e62241ce0013190</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="License Request">88045b17c3f021101e62241ce00131f7</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:20:39</sys_created_on>
+        <sys_id>2e8d179fc3f021101e62241ce0013191</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:15:55</sys_updated_on>
+        <ui_id>28b48ac3-1aa3-4994-a2ff-9c9876db381a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2e8d179fc3f021101e62241ce0013191"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>2e8d179fc3f021101e62241ce0013191</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:20:39</sys_created_on>
+        <sys_id>ae8d179fc3f021101e62241ce0013196</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <value>IsNotFree</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2e8d179fc3f021101e62241ce0013191"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>2e8d179fc3f021101e62241ce0013191</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:20:39</sys_created_on>
+        <sys_id>2e8d179fc3f021101e62241ce0013196</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:15:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Service Catalog_1.request_item.price}}!=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>2e8d179fc3f021101e62241ce0013191</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:20:39</sys_created_on>
+        <sys_id>6a8d179fc3f021101e62241ce0013196</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:20:39</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2e8d179fc3f021101e62241ce0013191"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2e8d179fc3f021101e62241ce0013191"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">9aa4af57c33421101e62241ce0013127</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="License Request">88045b17c3f021101e62241ce00131f7</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>f9e37387-d0f2-4a3a-9616-fb3d64e41b75</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>d2a4af57c33421101e62241ce0013128</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 14:15:56</sys_updated_on>
+        <ui_id>4f22e25f-b7b9-425b-9500-2b7b97d32e0b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d2a4af57c33421101e62241ce0013128"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d2a4af57c33421101e62241ce0013128"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d2a4af57c33421101e62241ce0013128"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=88045b17c3f021101e62241ce00131f7^sys_idNOT IN12a4af57c33421101e62241ce0013171,5ea4af57c33421101e62241ce0013170,6071ab93c33421101e62241ce0013153,768d179fc3f021101e62241ce00131a3,9aa4af57c33421101e62241ce0013170,a871ab93c33421101e62241ce0013152,d2a4af57c33421101e62241ce0013170,d2a4af57c33421101e62241ce0013171"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>88045b17c3f021101e62241ce00131f7</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{fa556fd8-f918-4bd1-a13d-a1b1eb445b9c.accountid}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>12a4af57c33421101e62241ce0013171</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>237940cd-dee8-4fa6-8059-0154d2c75e34</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>88045b17c3f021101e62241ce00131f7</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{fbc7fa21-8523-4e3a-8fff-574c4fafc19d.accountid}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>5ea4af57c33421101e62241ce0013170</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7155f2d0-b1ed-4f61-a6dc-285c9e76285b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>88045b17c3f021101e62241ce00131f7</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{fbc7fa21-8523-4e3a-8fff-574c4fafc19d.password}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:37:43</sys_created_on>
+        <sys_id>6071ab93c33421101e62241ce0013153</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:37:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7fe5cbe9-b647-4978-92db-1049354306ed</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>88045b17c3f021101e62241ce00131f7</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Service Catalog_1.request_item.requested_for.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:20:39</sys_created_on>
+        <sys_id>768d179fc3f021101e62241ce00131a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:20:39</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>aa67496f-c22f-4c68-9a23-cf170d14ac9d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>88045b17c3f021101e62241ce00131f7</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Service Catalog_1.request_item.requested_for.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>9aa4af57c33421101e62241ce0013170</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>1f37aae6-6729-4a57-a9a4-7ad768d8aea8</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>88045b17c3f021101e62241ce00131f7</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{fbc7fa21-8523-4e3a-8fff-574c4fafc19d.accountid}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:37:43</sys_created_on>
+        <sys_id>a871ab93c33421101e62241ce0013152</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:37:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>5006024c-f71d-427a-8b52-e7604431b920</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>88045b17c3f021101e62241ce00131f7</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{fbc7fa21-8523-4e3a-8fff-574c4fafc19d.password}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>d2a4af57c33421101e62241ce0013170</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b20a343a-9463-4bca-98b2-6f0bac246ca6</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>88045b17c3f021101e62241ce00131f7</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{fa556fd8-f918-4bd1-a13d-a1b1eb445b9c.password}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:51:45</sys_created_on>
+        <sys_id>d2a4af57c33421101e62241ce0013171</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:51:45</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0a2f9554-8f3a-43d5-b53a-ce83afb64db0</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=88045b17c3f021101e62241ce00131f7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_88045b17c3f021101e62241ce00131f7^sys_idNOT IN6a8d179fc3f021101e62241ce001318b,a68d179fc3f021101e62241ce0013186"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_88045b17c3f021101e62241ce00131f7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:20:39</sys_created_on>
+        <sys_id>6a8d179fc3f021101e62241ce001318b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:20:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_88045b17c3f021101e62241ce00131f7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:20:39</sys_created_on>
+        <sys_id>a68d179fc3f021101e62241ce0013186</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:20:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_88045b17c3f021101e62241ce00131f7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_88045b17c3f021101e62241ce00131f7"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_88045b17c3f021101e62241ce00131f7"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=88045b17c3f021101e62241ce00131f7^sys_idNOT IN4305a797c33421101e62241ce0013170"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"4305a797c33421101e62241ce0013170","name":"plan","plan_signature":null}}</plan>
+        <plan_id>88045b17c3f021101e62241ce00131f7</plan_id>
+        <snapshot>49d76b5bc33421101e62241ce0013194</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4305a797c33421101e62241ce0013170</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:27</sys_updated_on>
+        <trigger display_value="">4b05a797c33421101e62241ce001316f</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=88045b17c3f021101e62241ce00131f7"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>license_request</internal_name>
+        <label_cache>[{"name":"a8f2e26c-e287-4d9a-bb07-7bda67287017.__dont_treat_as_error__","label":"6 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8f2e26c-e287-4d9a-bb07-7bda67287017.__action_status__","label":"6 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a8f2e26c-e287-4d9a-bb07-7bda67287017.email","label":"6 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fa556fd8-f918-4bd1-a13d-a1b1eb445b9c.__dont_treat_as_error__","label":"5 - create VSCode Account➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"29ec5331-9f39-4461-8907-35d97505c24e"}},{"name":"fa556fd8-f918-4bd1-a13d-a1b1eb445b9c.password","label":"5 - create VSCode Account➛Password","reference_display":"Password","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"29eae128-0a7f-4e5d-a458-6123b6b748d7"}},{"name":"fa556fd8-f918-4bd1-a13d-a1b1eb445b9c.__action_status__","label":"5 - create VSCode Account➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"1b498141-a20b-4991-8a16-3d888fa325a0"}},{"name":"fa556fd8-f918-4bd1-a13d-a1b1eb445b9c.accountid","label":"5 - create VSCode Account➛AccountID","reference_display":"AccountID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"cca2e957-69ad-4077-8285-5d7ee062b60d"}},{"name":"c9bbcc92-aaea-4eee-91b7-1fefdaf75418.__dont_treat_as_error__","label":"7 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c9bbcc92-aaea-4eee-91b7-1fefdaf75418.__action_status__","label":"7 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c9bbcc92-aaea-4eee-91b7-1fefdaf75418.table_name","label":"7 - Create Record➛licenses  Table","reference":"x_976337_license_c_licenses","reference_display":"licenses ","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c9bbcc92-aaea-4eee-91b7-1fefdaf75418.record","label":"7 - Create Record➛licenses  Record","reference":"x_976337_license_c_licenses","reference_display":"licenses ","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item.requested_for.manager","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"5c8d39d4-1bb2-4669-9be9-e75e6c6ea127.__dont_treat_as_error__","label":"2 - Ask For Approval➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5c8d39d4-1bb2-4669-9be9-e75e6c6ea127.__action_status__","label":"2 - Ask For Approval➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5c8d39d4-1bb2-4669-9be9-e75e6c6ea127.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item.requested_for.email","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"fbc7fa21-8523-4e3a-8fff-574c4fafc19d.__dont_treat_as_error__","label":"3 - create VSCode Account➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"29ec5331-9f39-4461-8907-35d97505c24e"}},{"name":"fbc7fa21-8523-4e3a-8fff-574c4fafc19d.__action_status__","label":"3 - create VSCode Account➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"1b498141-a20b-4991-8a16-3d888fa325a0"}},{"name":"Service Catalog_1.request_item.cat_item.cost","label":"Trigger - Service Catalog➛Requested Item Record➛Item➛Cost","reference":"","reference_display":"Cost","type":"decimal","base_type":"decimal","parent_table_name":"sc_cat_item","column_name":"cost"},{"name":"71a6c382-f0a4-4a66-9bbb-f725cb464815.email","label":"3 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"71a6c382-f0a4-4a66-9bbb-f725cb464815.__action_status__","label":"3 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"71a6c382-f0a4-4a66-9bbb-f725cb464815.__dont_treat_as_error__","label":"3 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"default_search_field":"number"}},{"name":"Service Catalog_1.request_item.opened_by.email","label":"Trigger - Service Catalog➛Requested Item Record➛Opened by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Service Catalog_1.request_item.cat_item.name","label":"Trigger - Service Catalog➛Requested Item Record➛Item➛Name","reference":"","reference_display":"Name","type":"translated_text","base_type":"translated_text","parent_table_name":"sc_cat_item","column_name":"name"},{"name":"Service Catalog_1.request_item.requested_for.first_name","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"fbc7fa21-8523-4e3a-8fff-574c4fafc19d.accountid","label":"3 - create VSCode Account➛AccountID","reference_display":"AccountID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"cca2e957-69ad-4077-8285-5d7ee062b60d"}},{"name":"fbc7fa21-8523-4e3a-8fff-574c4fafc19d.password","label":"3 - create VSCode Account➛Password","reference_display":"Password","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"29eae128-0a7f-4e5d-a458-6123b6b748d7"}},{"name":"faa02e19-904a-4453-89eb-4288acfccba9.record","label":"3 - Create Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"faa02e19-904a-4453-89eb-4288acfccba9.table_name","label":"3 - Create Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"faa02e19-904a-4453-89eb-4288acfccba9.__action_status__","label":"3 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"faa02e19-904a-4453-89eb-4288acfccba9.__dont_treat_as_error__","label":"3 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5a578c8c-55c1-43c7-808b-eef8e122eb0b.context","label":"5 - Dynamic Flow➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>License Request</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="License Request">88045b17c3f021101e62241ce00131f7</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>22056797c33421101e62241ce001318c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=22056797c33421101e62241ce001318c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=22056797c33421101e62241ce001318c"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=22056797c33421101e62241ce001318c^sys_idNOT INf605a797c33421101e62241ce0013129"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="License Request">22056797c33421101e62241ce001318c</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>f605a797c33421101e62241ce0013129</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:27</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f605a797c33421101e62241ce0013129"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=22056797c33421101e62241ce001318c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=22056797c33421101e62241ce001318c^sys_idNOT INa6056797c33421101e62241ce001318d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>22056797c33421101e62241ce001318c</id>
+        <name>License Request</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>a6056797c33421101e62241ce001318d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a6056797c33421101e62241ce001318d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=22056797c33421101e62241ce001318c^sys_idNOT IN2e056797c33421101e62241ce001318e,aa056797c33421101e62241ce00131bb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="License Request">22056797c33421101e62241ce001318c</model>
+        <model_id>22056797c33421101e62241ce001318c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_22056797c33421101e62241ce001318c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>2e056797c33421101e62241ce001318e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="License Request">22056797c33421101e62241ce001318c</model>
+        <model_id>22056797c33421101e62241ce001318c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_22056797c33421101e62241ce001318c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>aa056797c33421101e62241ce00131bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=22056797c33421101e62241ce001318c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=22056797c33421101e62241ce001318c"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=22056797c33421101e62241ce001318c^sys_idNOT IN7205a797c33421101e62241ce001310b,7205a797c33421101e62241ce0013120,fe05a797c33421101e62241ce0013116,fe05a797c33421101e62241ce0013127"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="License Request">22056797c33421101e62241ce001318c</flow>
+        <order>2</order>
+        <parent_ui_id>28b48ac3-1aa3-4994-a2ff-9c9876db381a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>7205a797c33421101e62241ce001310b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <ui_id>5c8d39d4-1bb2-4669-9be9-e75e6c6ea127</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7205a797c33421101e62241ce001310b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7205a797c33421101e62241ce001310b</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>3e05a797c33421101e62241ce001310d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7205a797c33421101e62241ce001310b</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>7a05a797c33421101e62241ce001310d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7205a797c33421101e62241ce001310b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>b205a797c33421101e62241ce001310e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7205a797c33421101e62241ce001310b</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>fe05a797c33421101e62241ce001310d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7205a797c33421101e62241ce001310b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>7205a797c33421101e62241ce001310b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>3605a797c33421101e62241ce001310d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAnyU[{{Service Catalog_1.request_item.requested_for.manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>7205a797c33421101e62241ce001310b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>3a05a797c33421101e62241ce001310c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>7205a797c33421101e62241ce001310b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>7205a797c33421101e62241ce001310d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>7205a797c33421101e62241ce001310b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>fa05a797c33421101e62241ce001310c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>7205a797c33421101e62241ce001310b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>be05a797c33421101e62241ce001310c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>7205a797c33421101e62241ce001310b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>f605a797c33421101e62241ce001310d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7205a797c33421101e62241ce001310b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7205a797c33421101e62241ce001310b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="License Request">22056797c33421101e62241ce001318c</flow>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>7205a797c33421101e62241ce0013120</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <ui_id>a8f2e26c-e287-4d9a-bb07-7bda67287017</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7205a797c33421101e62241ce0013120"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7205a797c33421101e62241ce0013120</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>f605a797c33421101e62241ce0013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7205a797c33421101e62241ce0013120"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>7205a797c33421101e62241ce0013120</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>b205a797c33421101e62241ce0013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Hello&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:1f37aae6-6729-4a57-a9a4-7ad768d8aea8}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:1f37aae6-6729-4a57-a9a4-7ad768d8aea8}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Service Catalog &amp;gt; Requested Item Record &amp;gt; Requested for &amp;gt; First name"&gt;&lt;span class="pill-start"&gt;Trigger - Service Catalog&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;First name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_1f37aae6-6729-4a57-a9a4-7ad768d8aea8" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Here is your account:&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;AccountID:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:237940cd-dee8-4fa6-8059-0154d2c75e34}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:237940cd-dee8-4fa6-8059-0154d2c75e34}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="3 &amp;gt; AccountID"&gt;&lt;span class="pill-start"&gt;3&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;AccountID&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_237940cd-dee8-4fa6-8059-0154d2c75e34" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Password:&amp;nbsp;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:0a2f9554-8f3a-43d5-b53a-ce83afb64db0}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="3 &amp;gt; Password"&gt;&lt;span class="pill-start"&gt;3&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Password&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_0a2f9554-8f3a-43d5-b53a-ce83afb64db0" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Remember to change this password right now!&amp;nbsp;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>7205a797c33421101e62241ce0013120</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>7605a797c33421101e62241ce0013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>Licens for ﻿{{Service Catalog_1.request_item.cat_item.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>7205a797c33421101e62241ce0013120</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>fe05a797c33421101e62241ce0013121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Service Catalog_1.request_item.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7205a797c33421101e62241ce0013120^sys_idNOT INba05a797c33421101e62241ce0013121"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>ah_subject</input_name>
+        <instance>7205a797c33421101e62241ce0013120</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"ah_subject":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>ba05a797c33421101e62241ce0013121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7205a797c33421101e62241ce0013120"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="create VSCode Account">c24ddf5fc3f021101e62241ce00131a6</action_type>
+        <action_type_parent display_value="create VSCode Account">49ba5f1bc3f021101e62241ce0013182</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="License Request">22056797c33421101e62241ce001318c</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>fe05a797c33421101e62241ce0013116</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <ui_id>fa556fd8-f918-4bd1-a13d-a1b1eb445b9c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fe05a797c33421101e62241ce0013116"/>
+    <sys_element_mapping action="delete_multiple" query="id=fe05a797c33421101e62241ce0013116"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>email</field>
+        <id>fe05a797c33421101e62241ce0013116</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>3e05a797c33421101e62241ce0013117</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c24ddf5fc3f021101e62241ce00131a6</table>
+        <value>{{Service Catalog_1.request_item.requested_for.email}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fe05a797c33421101e62241ce0013116"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fe05a797c33421101e62241ce0013116"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="License Request">22056797c33421101e62241ce001318c</flow>
+        <order>7</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>fe05a797c33421101e62241ce0013127</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <ui_id>c9bbcc92-aaea-4eee-91b7-1fefdaf75418</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fe05a797c33421101e62241ce0013127"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fe05a797c33421101e62241ce0013127</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>f205a797c33421101e62241ce0013129</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <value>x_976337_license_c_licenses</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fe05a797c33421101e62241ce0013127"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>fe05a797c33421101e62241ce0013127</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>be05a797c33421101e62241ce0013128</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>fe05a797c33421101e62241ce0013127</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>7205a797c33421101e62241ce0013129</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>software=VSCode﻿^accountid={{fa556fd8-f918-4bd1-a13d-a1b1eb445b9c.accountid}}^user_email={{Service Catalog_1.request_item.requested_for.email}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fe05a797c33421101e62241ce0013127"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fe05a797c33421101e62241ce0013127"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=22056797c33421101e62241ce001318c"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=22056797c33421101e62241ce001318c^sys_idNOT IN6e056797c33421101e62241ce00131cb,7e056797c33421101e62241ce00131cf,e2056797c33421101e62241ce00131c7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c6a4af57c33421101e62241ce0013123</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="License Request">22056797c33421101e62241ce001318c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>28b48ac3-1aa3-4994-a2ff-9c9876db381a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>6e056797c33421101e62241ce00131cb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <ui_id>f9e37387-d0f2-4a3a-9616-fb3d64e41b75</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6e056797c33421101e62241ce00131cb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>6e056797c33421101e62241ce00131cb</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>ee056797c33421101e62241ce00131ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <value>request Approved</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6e056797c33421101e62241ce00131cb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>6e056797c33421101e62241ce00131cb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>6e056797c33421101e62241ce00131ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{5c8d39d4-1bb2-4669-9be9-e75e6c6ea127.approval_state}}=rejected</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>6e056797c33421101e62241ce00131cb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>aa056797c33421101e62241ce00131ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6e056797c33421101e62241ce00131cb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6e056797c33421101e62241ce00131cb"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">9aa4af57c33421101e62241ce0013127</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="License Request">22056797c33421101e62241ce001318c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>f9e37387-d0f2-4a3a-9616-fb3d64e41b75</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>7e056797c33421101e62241ce00131cf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <ui_id>4f22e25f-b7b9-425b-9500-2b7b97d32e0b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7e056797c33421101e62241ce00131cf"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7e056797c33421101e62241ce00131cf"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7e056797c33421101e62241ce00131cf"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ae8d179fc3f021101e62241ce0013190</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="License Request">22056797c33421101e62241ce001318c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>e2056797c33421101e62241ce00131c7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <ui_id>28b48ac3-1aa3-4994-a2ff-9c9876db381a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e2056797c33421101e62241ce00131c7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e2056797c33421101e62241ce00131c7</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>ee056797c33421101e62241ce00131ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <value>IsNotFree</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e2056797c33421101e62241ce00131c7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>e2056797c33421101e62241ce00131c7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>6e056797c33421101e62241ce00131ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Service Catalog_1.request_item.cat_item.cost}}!=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>e2056797c33421101e62241ce00131c7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>aa056797c33421101e62241ce00131ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e2056797c33421101e62241ce00131c7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e2056797c33421101e62241ce00131c7"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=22056797c33421101e62241ce001318c^sys_idNOT IN3205a797c33421101e62241ce001312b,3605a797c33421101e62241ce001312a,3a05a797c33421101e62241ce001312a,3e05a797c33421101e62241ce001312a,b205a797c33421101e62241ce001312a,b605a797c33421101e62241ce001312a,ba05a797c33421101e62241ce001312a,be05a797c33421101e62241ce001312a"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>22056797c33421101e62241ce001318c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{fa556fd8-f918-4bd1-a13d-a1b1eb445b9c.password}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>3205a797c33421101e62241ce001312b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0a2f9554-8f3a-43d5-b53a-ce83afb64db0</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>22056797c33421101e62241ce001318c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{fbc7fa21-8523-4e3a-8fff-574c4fafc19d.accountid}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>3605a797c33421101e62241ce001312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7155f2d0-b1ed-4f61-a6dc-285c9e76285b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>22056797c33421101e62241ce001318c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{fbc7fa21-8523-4e3a-8fff-574c4fafc19d.password}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>3a05a797c33421101e62241ce001312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7fe5cbe9-b647-4978-92db-1049354306ed</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>22056797c33421101e62241ce001318c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Service Catalog_1.request_item.requested_for.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>3e05a797c33421101e62241ce001312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>1f37aae6-6729-4a57-a9a4-7ad768d8aea8</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>22056797c33421101e62241ce001318c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{fbc7fa21-8523-4e3a-8fff-574c4fafc19d.password}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>b205a797c33421101e62241ce001312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b20a343a-9463-4bca-98b2-6f0bac246ca6</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>22056797c33421101e62241ce001318c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{fa556fd8-f918-4bd1-a13d-a1b1eb445b9c.accountid}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>b605a797c33421101e62241ce001312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>237940cd-dee8-4fa6-8059-0154d2c75e34</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>22056797c33421101e62241ce001318c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Service Catalog_1.request_item.requested_for.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>ba05a797c33421101e62241ce001312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>aa67496f-c22f-4c68-9a23-cf170d14ac9d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>22056797c33421101e62241ce001318c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{fbc7fa21-8523-4e3a-8fff-574c4fafc19d.accountid}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:26</sys_created_on>
+        <sys_id>be05a797c33421101e62241ce001312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>5006024c-f71d-427a-8b52-e7604431b920</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=22056797c33421101e62241ce001318c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_22056797c33421101e62241ce001318c^sys_idNOT IN22056797c33421101e62241ce00131c0,62056797c33421101e62241ce00131b8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_22056797c33421101e62241ce001318c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>22056797c33421101e62241ce00131c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_22056797c33421101e62241ce001318c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:53:25</sys_created_on>
+        <sys_id>62056797c33421101e62241ce00131b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:53:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_22056797c33421101e62241ce001318c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_22056797c33421101e62241ce001318c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_22056797c33421101e62241ce001318c"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>88045b17c3f021101e62241ce00131f7</sys_id>
+        <latest_snapshot>22056797c33421101e62241ce001318c</latest_snapshot>
+        <compiler_build>glide-tokyo-07-08-2022__patch1-09-01-2022_09-16-2022_1610.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>

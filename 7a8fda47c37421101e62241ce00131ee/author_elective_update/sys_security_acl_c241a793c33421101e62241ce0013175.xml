@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_976337_license_c_licenses</description>
+        <name>x_976337_license_c_licenses</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:37:00</sys_created_on>
+        <sys_id>c241a793c33421101e62241ce0013175</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_976337_license_c_licenses</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sys_security_acl_c241a793c33421101e62241ce0013175</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:37:00</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</application>
+        <file_path/>
+        <instance_id>70c7244cdb65cd105749cac505961953</instance_id>
+        <instance_name>dev124633</instance_name>
+        <name>sys_security_acl_c241a793c33421101e62241ce0013175</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_976337_license_c_licenses</description><name>x_976337_license_c_licenses</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-09 13:37:00</sys_created_on><sys_id>c241a793c33421101e62241ce0013175</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_976337_license_c_licenses</sys_name><sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package><sys_policy/><sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope><sys_update_name>sys_security_acl_c241a793c33421101e62241ce0013175</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-09 13:37:00</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>235417098</payload_hash>
+        <record_name>x_976337_license_c_licenses</record_name>
+        <reverted_from/>
+        <source>4240e647c37421101e62241ce0013187</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:37:00</sys_created_on>
+        <sys_id>c241a793c33421101e62241ce0013177</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1863664c8b70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 13:37:00</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>0e41a793693421100e9f5db31b24b276</update_guid>
+        <update_guid_history>0e41a793693421100e9f5db31b24b276:235417098</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 12:48:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>7b50838153904b5ea7b10ccec3f14241</sys_id>
+        <sys_metadata>c241a793c33421101e62241ce0013175</sys_metadata>
+        <sys_name>x_976337_license_c_licenses</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_parent display_value="">8241a793c33421101e62241ce001317f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_scope_delete display_value="">0579e4a0b0a84e788031a4237a8241c9</sys_scope_delete>
+        <sys_update_name>sys_security_acl_c241a793c33421101e62241ce0013175</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_c241a793c33421101e62241ce0013175">c241a793c33421101e62241ce0013177</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

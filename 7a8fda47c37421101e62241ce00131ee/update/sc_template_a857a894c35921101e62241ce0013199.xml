@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_template">
+    <sc_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <available_for/>
+        <cat_item display_value="Catalog Item Builder">91edb87273221010c84e2bb43cf6a7ae</cat_item>
+        <name>LicenseTemplate</name>
+        <short_description/>
+        <sys_class_name>sc_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-24 12:54:19</sys_created_on>
+        <sys_id>a857a894c35921101e62241ce0013199</sys_id>
+        <sys_name>LicenseTemplate</sys_name>
+        <sys_package display_value="License Catalog" source="x_976337_license_c">7a8fda47c37421101e62241ce00131ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="License Catalog">7a8fda47c37421101e62241ce00131ee</sys_scope>
+        <sys_update_name>sc_template_a857a894c35921101e62241ce0013199</sys_update_name>
+    </sc_template>
+    <sys_translated_text action="delete_multiple" query="documentkey=a857a894c35921101e62241ce0013199"/>
+</record_update>
